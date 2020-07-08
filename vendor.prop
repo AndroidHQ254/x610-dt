@@ -142,3 +142,4 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 persist.radio.lte.chip=0
+ro.surface_flinger.running_without_sync_framework=true
