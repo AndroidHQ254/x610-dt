@@ -1147,8 +1147,16 @@ on init
     #seclabel u:r:osi:s0
 #TSD:delete CCQHLEL-159 kang.wang 20190523 end
 
-# Toggle airplane mode on and off on boot to enable volte.
-# This hack needs ImsInit commit to request ims on boot to work properly.
+service charger /bin/chargeonlymode
+    class charger
+    critical
+    #seclabel u:r:charger:s0
+    group system graphics
+    seclabel u:r:healthd:s0
+
+on boot
+    # Toggle airplane mode on and off on boot to enable volte.
+    # This hack needs ImsInit commit to request ims on boot to work properly.
 
     exec - root -- /system/bin/sh -c "sleep 3"
     exec - root -- /system/bin/sh -c "settings put global airplane_mode_on 1"
