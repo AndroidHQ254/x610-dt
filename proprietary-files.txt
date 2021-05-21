@@ -387,11 +387,7 @@ vendor/lib/modules/wmt_chrdev_wifi.ko
 vendor/lib/modules/wmt_drv.ko
 
 # Lights
-vendor/bin/hw/android.hardware.light@2.0-service-mediatek
-vendor/etc/init/android.hardware.light@2.0-service-mediatek.rc
-vendor/lib/hw/android.hardware.light@2.0-impl-mediatek.so
 vendor/lib/hw/lights.mt6763.so
-vendor/lib64/hw/android.hardware.light@2.0-impl-mediatek.so
 vendor/lib64/hw/lights.mt6763.so
 
 # Listen
