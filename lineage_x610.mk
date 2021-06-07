@@ -32,3 +32,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="full_x610_h651-user 9 PPR1.1
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := Infinix/H651B/Infinix-X610:9/PPR1.180610.011/AB-200805V370:user/release-keys
+
+# Time
+LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
