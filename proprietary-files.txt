@@ -421,18 +421,6 @@ vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.power@2.0-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.pq@2.2-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
-vendor/lib/libMtkOmxAdpcmDec.so
-vendor/lib/libMtkOmxAdpcmEnc.so
-vendor/lib/libMtkOmxAlacDec.so
-vendor/lib/libMtkOmxApeDec.so
-vendor/lib/libMtkOmxCore.so
-vendor/lib/libMtkOmxG711Dec.so
-vendor/lib/libMtkOmxGsmDec.so
-vendor/lib/libMtkOmxMp3Dec.so
-vendor/lib/libMtkOmxRawDec.so
-vendor/lib/libMtkOmxVdecEx.so
-vendor/lib/libMtkOmxVenc.so
-vendor/lib/libMtkOmxVorbisEnc.so
 vendor/lib/libMtkSpeechEnh.so
 vendor/lib/libmtk_drvb.so
 vendor/lib/libmtkcam.logicalmodule.so
@@ -476,7 +464,6 @@ vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.power@2.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.2-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
-vendor/lib64/libMtkOmxCore.so
 vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/libmtk_drvb.so
 vendor/lib64/libmtkcam.eventcallback.so
@@ -580,6 +567,22 @@ vendor/lib64/libneuropilot_hal_utils.so
 vendor/lib/libtextclassifier_hash.so
 vendor/lib64/libtextclassifier_hash.so
 vendor/lib64/libvpu.so
+
+# OMX
+vendor/etc/mtk_omx_core.cfg
+vendor/lib/libMtkOmxAdpcmDec.so
+vendor/lib/libMtkOmxAdpcmEnc.so
+vendor/lib/libMtkOmxAlacDec.so
+vendor/lib/libMtkOmxApeDec.so
+vendor/lib/libMtkOmxCore.so
+vendor/lib/libMtkOmxG711Dec.so
+vendor/lib/libMtkOmxGsmDec.so
+vendor/lib/libMtkOmxMp3Dec.so
+vendor/lib/libMtkOmxRawDec.so
+vendor/lib/libMtkOmxVdecEx.so|dd26da2c43d43d3847dc60ac21e91efaee5a092f
+vendor/lib/libMtkOmxVenc.so
+vendor/lib/libMtkOmxVorbisEnc.so
+vendor/lib64/libMtkOmxCore.so
 
 # Power-Hardware
 vendor/lib/hw/power.default.so
@@ -775,7 +778,6 @@ vendor/etc/ecc_list_OP12.xml
 vendor/etc/ecc_list_OP17.xml
 vendor/etc/ecc_list_OP18.xml
 vendor/etc/mpe.conf
-vendor/etc/mtk_omx_core.cfg
 vendor/etc/partition_permission.sh
 vendor/etc/pildc.cfg
 vendor/etc/power_whitelist_cfg.xml
