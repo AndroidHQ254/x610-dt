@@ -6,7 +6,7 @@
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@4.0 \
+    android.hardware.audio@4.0.vendor \
     android.hardware.soundtrigger@2.1-impl \
     audio.a2dp.default \
     audio.bluetooth.default \
@@ -34,11 +34,12 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.a2dp@1.0
+    android.hardware.bluetooth.a2dp@1.0.vendor \
+    android.hardware.bluetooth@1.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4
+    android.hardware.camera.provider@2.4.vendor
 
 PRODUCT_PACKAGES += \
     Snap
@@ -49,6 +50,7 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.3-service.clearkey
 
 # Gatekeeper
@@ -58,6 +60,7 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.0.vendor \
     libandroid_net \
     libcurl
 
@@ -69,6 +72,7 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.allocator@1.0.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -109,7 +113,7 @@ PRODUCT_COPY_FILES += \
 
 # Neural Networks
 PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.1
+    android.hardware.neuralnetworks@1.1.vendor
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -165,7 +169,8 @@ PRODUCT_COPY_FILES += \
 
 # Radio
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.2
+    android.hardware.broadcastradio@1.1.vendor \
+    android.hardware.radio@1.2.vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -203,7 +208,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.1
+    android.hardware.usb@1.1.vendor
 
 # VNDK
 PRODUCT_COPY_FILES += \
@@ -223,7 +228,8 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.2
+    android.hardware.wifi@1.2.vendor \
+    android.hardware.wifi.supplicant@1.1.vendor
 
 PRODUCT_PACKAGES += \
     libkeystore-engine-wifi-hidl \
