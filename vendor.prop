@@ -5,6 +5,7 @@ ro.mediatek.chip_ver=S01
 ro.mediatek.platform=MT6765
 ro.telephony.sim.count=2
 persist.radio.default.sim=0
+persist.sys.binary_xml=false
 vendor.camera.mdp.cz.enable=1
 ril.external.md=0
 ro.vendor.mtk_cam_lomo_support=1
