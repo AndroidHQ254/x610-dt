@@ -53,7 +53,7 @@
 /dev/btif                 0600   system     system
 
 # Trusty driver
-/dev/trusty-ipc-dev0      0660   system     system
+/dev/trusty-ipc-dev0      0666   root     root
 
 # TrustonicTEE driver
 /dev/mobicore             0600   system     system
