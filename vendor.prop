@@ -1,7 +1,6 @@
 import /proc/tkv
 ro.carrier=unknown
 ro.dalvik.vm.native.bridge=0
-ro.sf.lcd_density=480
 ro.mediatek.chip_ver=S01
 ro.mediatek.platform=MT6765
 ro.telephony.sim.count=2
