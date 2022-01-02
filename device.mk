@@ -113,7 +113,7 @@ PRODUCT_PACKAGES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.infinix
+    android.hardware.light-service.x610
 
 # LMK
 PRODUCT_COPY_FILES += \
