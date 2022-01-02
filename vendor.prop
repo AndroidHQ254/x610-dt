@@ -153,3 +153,4 @@ debug.sf.hwc.min.duration=17000000
 debug.fdsan=warn_once
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
+ro.vendor.perf.scroll_opt=true
