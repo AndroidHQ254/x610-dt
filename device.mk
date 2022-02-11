@@ -10,6 +10,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Inherit stock camera
 $(call inherit-product, vendor/infinix/x610-transsioncamera/x610/x610-vendor.mk)
 
+# Include Dev GSI Keys
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@4.0.vendor \
