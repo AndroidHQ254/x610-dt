@@ -92,6 +92,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6765
+BOARD_HAS_MTK_HARDWARE := true
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
