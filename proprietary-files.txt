@@ -571,9 +571,16 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/vendor.mediatek.hardware.wifi.hostapd@2.0.so
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so
 
-# Perf
-
-# Postprocessing
+# Neural networks - from full_oppo6771_17065-user 9 PPR1.180610.011 eng.root.20200509.060522 release-keys
+vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-apunn
+vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-gpunn
+vendor/etc/init/android.hardware.neuralnetworks@1.1-service-apunn.rc
+vendor/etc/init/android.hardware.neuralnetworks@1.1-service-gpunn.rc
+vendor/lib/libneuropilot_hal_utils.so
+vendor/lib64/libneuropilot_hal_utils.so
+vendor/lib/libtextclassifier_hash.so
+vendor/lib64/libtextclassifier_hash.so
+vendor/lib64/libvpu.so
 
 # Power-Hardware
 vendor/lib/hw/power.default.so
