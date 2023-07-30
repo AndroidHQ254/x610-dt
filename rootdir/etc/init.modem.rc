@@ -20,10 +20,9 @@ on early-init
     setprop ro.net.upload.benchmark.default blocking
 
 on post-fs-data
-
     write /proc/bootprof "post-fs-data: on modem start"
 
-# Encrypt phone function
+    # Encrypt phone function
     setprop vold.post_fs_data_done 1
 
 service md_minilog_util /vendor/bin/md_minilog_util
