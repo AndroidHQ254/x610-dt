@@ -1,4 +1,3 @@
-import /proc/tkv
 ro.carrier=unknown
 ro.dalvik.vm.native.bridge=0
 ro.mediatek.chip_ver=S01
