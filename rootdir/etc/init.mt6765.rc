@@ -503,7 +503,7 @@ on post-fs-data
     mkdir /data/vendor/arcsoft 0777 system system
 #ITD:add arcsoft by yuanchen.qiu 20190425 end
 #ITD:Add Midtest Mian3 Failed By Jesse 190525 Start
-    chmod root root /sys/class/main2_light/main2_light/main2_light
+    chmod root /sys/class/main2_light/main2_light/main2_light
     chmod 0666 /sys/class/main2_light/main2_light/main2_light
 #ITD:Add Midtest Mian3 Failed By Jesse 190525 End
     #Camera
@@ -675,7 +675,7 @@ on boot
     chmod 0666 /sys/devices/virtual/sub_torch/sub_torch/sub_torch_level
     #TDD: add XWWYLHLYS-22 by shouhui.li 2018.09.20 end
 #ITD add CBQHLES-739 by yang.li3 20181114 start
-    chmod root root /sys/class/screen_torch/screen_torch/screen_torch_level
+    chmod root /sys/class/screen_torch/screen_torch/screen_torch_level
     chmod 0666 /sys/class/screen_torch/screen_torch/screen_torch_level
     chmod 0666 /sys/devices/virtual/screen_torch/screen_torch/screen_torch_level
 #ITD add CBQHLES-739 by yang.li3 20181114 end
