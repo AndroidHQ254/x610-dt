@@ -55,6 +55,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/bin/hw/android.hardware.audio@4.0-service-mediatek)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
+            ;;
         vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-gpunn)
             "${PATCHELF}" --add-needed "libunwindstack.so" "${2}"
             ;;
@@ -80,6 +83,15 @@ function blob_fixup() {
             ;;
         vendor/lib/libMtkOmxVdecEx.so)
             "${PATCHELF}" --replace-needed "libui.so" "libui-v28.so" "${2}"
+            ;;
+        vendor/lib64/hw/dfps.mt6765.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
+            ;;
+        vendor/lib64/hw/vendor.mediatek.hardware.pq@2.2-impl.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
+            ;;
+        vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
             ;;
         vendor/lib64/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
