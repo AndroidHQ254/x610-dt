@@ -432,16 +432,6 @@ vendor/lib64/mediadrm/libwvdrmengine.so|841c6d91f8dba600936f2b9b831e2ae2cdcee8d7
 vendor/lib64/libwvhidl.so|b0626425e9a67c3d28e7bf002761b4e95a732c48
 
 # Display-Hardware
-vendor/bin/hw/android.hardware.graphics.allocator@2.0-service
-vendor/bin/hw/android.hardware.graphics.composer@2.1-service
-vendor/bin/hw/android.hardware.memtrack@1.0-service
-vendor/etc/init/android.hardware.graphics.allocator@2.0-service.rc
-vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc
-vendor/etc/init/android.hardware.memtrack@1.0-service.rc
-vendor/lib/hw/android.hardware.graphics.allocator@2.0-impl.so
-vendor/lib/hw/android.hardware.graphics.composer@2.1-impl.so
-vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so
-vendor/lib/hw/android.hardware.memtrack@1.0-impl.so
 vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/gralloc.mt6765.so
 vendor/lib/hw/memtrack.mt6765.so
@@ -455,10 +445,6 @@ vendor/lib/libion_ulit.so
 vendor/lib/libmemtrack_GL.so
 vendor/lib/libminiui.so
 vendor/lib/libpixelflinger.so
-vendor/lib64/hw/android.hardware.graphics.allocator@2.0-impl.so
-vendor/lib64/hw/android.hardware.graphics.composer@2.1-impl.so
-vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so
-vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so
 vendor/lib64/hw/gralloc.default.so
 vendor/lib64/hw/gralloc.mt6765.so
 vendor/lib64/hw/hwcomposer.mt6765.so
