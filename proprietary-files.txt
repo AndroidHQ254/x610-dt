@@ -415,7 +415,9 @@ vendor/lib/soundfx/libdirac.so
 vendor/lib/libDiracAPI_SHARED.so
 
 # DRM-Hardware
+vendor/lib/libdrm.so
 vendor/lib/libmtk_drvb.so
+vendor/lib64/libdrm.so
 vendor/lib64/libmtk_drvb.so
 
 # DRM (Hardware) - from Ulefone/Note_11P/Note_11P:11/RP1A.200720.011/2106051247:user/release-keys
@@ -471,6 +473,7 @@ vendor/lib64/libion_ulit.so
 vendor/lib64/libmemtrack_GL.so
 vendor/lib64/libminiui.so
 vendor/lib64/libpixelflinger.so
+vendor/lib64/libui_ext.so
 
 # Engineer Mode
 vendor/app/EmCamera/lib/arm64/libem_camera_jni.so
@@ -973,6 +976,15 @@ vendor/lib64/libsysenv.so|8faeff48161ab28d948256d543abdb2a8f08fa99
 vendor/lib/libsensorndkbridge.so
 vendor/lib64/hw/sensors.mt6765.so
 vendor/lib64/libsensorndkbridge.so
+
+# Tee
+vendor/bin/teei_daemon
+vendor/etc/init/microtrust.rc
+vendor/etc/init/vendor.microtrust.hardware.capi@2.0-service.rc
+vendor/lib/libTEECommon.so
+vendor/lib/vendor.microtrust.hardware.capi@2.0.so
+vendor/lib64/libTEECommon.so
+vendor/lib64/vendor.microtrust.hardware.capi@2.0.so
 
 # Thermal
 -vendor/app/MTKThermalManager/MTKThermalManager.apk
