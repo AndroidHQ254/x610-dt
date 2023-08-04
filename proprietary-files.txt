@@ -953,7 +953,10 @@ vendor/lib/libsysenv.so|9bcd41968251814c2209257173e02a8589fa8f04
 vendor/lib64/libsysenv.so|8faeff48161ab28d948256d543abdb2a8f08fa99
 
 # Sensors
+vendor/bin/hw/android.hardware.sensors@1.0-service-mediatek
+vendor/etc/init/android.hardware.sensors@1.0-service-mediatek.rc
 vendor/lib/libsensorndkbridge.so
+vendor/lib64/hw/android.hardware.sensors@1.0-impl-mediatek.so
 vendor/lib64/hw/sensors.mt6765.so
 vendor/lib64/libsensorndkbridge.so
 
