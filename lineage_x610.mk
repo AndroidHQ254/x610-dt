@@ -19,6 +19,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_DEVICE := x610
 PRODUCT_NAME := lineage_x610
 PRODUCT_BRAND := Infinix
+PRODUCT_MODEL := Infinix Note 6
 PRODUCT_MANUFACTURER := Infinix
 
 TARGET_BOOT_ANIMATION_RES := 1080
