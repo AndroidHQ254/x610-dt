@@ -975,6 +975,7 @@ vendor/lib64/hw/sensors.mt6765.so
 vendor/lib64/libsensorndkbridge.so
 
 # Tee
+vendor/bin/hw/vendor.microtrust.hardware.capi@2.0-service
 vendor/bin/teei_daemon
 vendor/etc/init/microtrust.rc
 vendor/etc/init/vendor.microtrust.hardware.capi@2.0-service.rc
@@ -1063,6 +1064,7 @@ vendor/etc/power_whitelist_cfg.xml
 vendor/etc/powercontable.cfg
 vendor/etc/powerscntbl.cfg
 vendor/etc/throttle.sh
+vendor/lib/libMtkSpeechEnh.so
 vendor/lib/lib_iir.so
 vendor/lib/lib_speech_enh.so
 vendor/lib/libaurisysdemo.so
@@ -1074,6 +1076,7 @@ vendor/lib/libhwm.so
 vendor/lib/libmrdumpv.so
 vendor/lib/libspeech_enh_lib.so
 vendor/lib/libspeechparser_vendor.so
+vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/lib_iir.so
 vendor/lib64/lib_speech_enh.so
 vendor/lib64/libaurisysdemo.so
