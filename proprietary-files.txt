@@ -965,6 +965,7 @@ vendor/lib64/hw/sensors.mt6765.so
 vendor/lib64/libsensorndkbridge.so
 
 # Tee
+vendor/bin/hw/vendor.microtrust.hardware.capi@2.0-service
 vendor/bin/teei_daemon
 vendor/etc/init/microtrust.rc
 vendor/etc/init/vendor.microtrust.hardware.capi@2.0-service.rc
