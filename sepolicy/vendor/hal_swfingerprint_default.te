@@ -1,0 +1,23 @@
+file_type_auto_trans(fingerprintd,system_data_file,fingerprintd_data_file);
+type hal_swfingerprint_hwservice, hwservice_manager_type;
+
+binder_call(hal_swfingerprint_client, hal_swfingerprint_server);
+binder_call(hal_swfingerprint_server, hal_swfingerprint_client);
+
+
+allow hal_swfingerprint_server hal_swfingerprint_hwservice:hwservice_manager { add find };
+allow hal_swfingerprint_server hidl_base_hwservice:hwservice_manager add;
+
+allow hal_swfingerprint_client hal_swfingerprint_hwservice:hwservice_manager find;
+allow hal_swfingerprint_default sf_service:service_manager find ;
+allow hal_fingerprint_default sf_service:service_manager add ;
+
+allow hal_swfingerprint ion_device:chr_file r_file_perms;
+
+r_dir_file(hal_swfingerprint, cgroup)
+r_dir_file(hal_swfingerprint, sysfs)
+
+type hal_swfingerprint_default, domain;
+type hal_swfingerprint_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_swfingerprint_default)
+hal_server_domain(hal_swfingerprint_default, hal_swfingerprint)

@@ -1,0 +1,3 @@
+attribute hal_swfingerprint;
+attribute hal_swfingerprint_client;
+attribute hal_swfingerprint_server;
