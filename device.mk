@@ -192,6 +192,7 @@ PRODUCT_PACKAGES += \
     init.modem.rc \
     init.mt6765.rc \
     init.mt6765.usb.rc \
+    init.recovery.mt6765.rc \
     init.sensor_1_0.rc \
     fstab.mt6765 \
     ueventd.mt6765.rc
