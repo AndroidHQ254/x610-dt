@@ -1,0 +1,4 @@
+allow mtk_hal_power pnpmgr:dir { getattr search };
+allow mtk_hal_power pnpmgr:file { read getattr open };
+
+allow mtk_hal_power pnpmgr:binder transfer;

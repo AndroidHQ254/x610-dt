@@ -1,0 +1,2 @@
+allow mtk_hal_audio sysfs_ccci:file { ioctl read getattr lock map open };
+allow mtk_hal_audio sysfs_ccci:dir search;

@@ -1,0 +1,33 @@
+type hal_swfingerprint_default, domain;
+type hal_swfingerprint_default_exec, exec_type, file_type, vendor_file_type;
+type hal_swfingerprint_hwservice, hwservice_manager_type;
+typeattribute hal_swfingerprint_default mlstrustedsubject;
+
+allow hal_swfingerprint_client hal_swfingerprint_server:binder { call transfer };
+allow hal_swfingerprint_server hal_swfingerprint_client:binder transfer;
+allow hal_swfingerprint_client hal_swfingerprint_server:fd use;
+allow hal_swfingerprint_server hal_swfingerprint_client:binder { call transfer };
+allow hal_swfingerprint_server hal_swfingerprint_client:fd use;
+allow hal_swfingerprint_server hal_swfingerprint_hwservice:hwservice_manager { add find };
+allow hal_swfingerprint_client hal_swfingerprint_hwservice:hwservice_manager find;
+allow hal_swfingerprint_default sf_service:service_manager find;
+allow hal_swfingerprint_default hal_swfingerprint_default_exec:file { read getattr map execute entrypoint open };
+allow hal_swfingerprint_default self:process execmem;
+allow hal_swfingerprint_default vndbinder_device:chr_file { ioctl open read write };
+allow hal_swfingerprint_default vendor_file:file { execute execute_no_trans};
+allow hal_swfingerprint_default same_process_hal_file:file execute;
+allow hal_swfingerprint_default hwservicemanager:binder { call transfer };
+allow hal_swfingerprint_default vndservicemanager:binder { call transfer };
+allow hal_swfingerprint_default hal_swfingerprint_hwservice:hwservice_manager { add find };
+
+allow hal_swfingerprint_default hal_fingerprint_default:binder { call transfer };
+allow hal_swfingerprint_default hal_fingerprint_default:fd use;
+allow hal_swfingerprint_default same_process_hal_file:file execute;
+
+allow hal_fingerprint_default sf_device:chr_file { ioctl read write getattr lock append map open };
+allow hal_fingerprint_default sf_data_file:dir { ioctl read write create getattr setattr lock append map unlink rename open };
+allow hal_fingerprint_default sf_data_file:file { ioctl read write create getattr setattr lock append map unlink rename open };
+allow hal_fingerprint_default sf_service:service_manager { add find };
+allow hal_fingerprint_default hal_swfingerprint_default:binder { call transfer };
+allow hal_fingerprint_default hal_swfingerprint_default:fd use;
+allow hal_fingerprint_default proc_rlkdevinfo:file { read write getattr open };

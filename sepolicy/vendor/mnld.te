@@ -1,0 +1,2 @@
+allow mnld sysfs_dt_firmware_android:dir { open read };
+allow mnld mnld:unix_dgram_socket sendto;

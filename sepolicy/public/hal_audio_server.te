@@ -1,0 +1,9 @@
+allow hal_audio_server audioserver:fd use;
+allow hal_audio_server audioserver:fifo_file write;
+allow hal_audio_server audio_device:chr_file rw_file_perms;
+allow hal_audio_server vendor_file:file { execute };
+allow hal_audio_server same_process_hal_file:file execute;
+allow hal_audio_server sysfs_boot_mode:file open;
+allow hal_audio_server ccci_aud_device:chr_file rw_file_perms;
+allow hal_audio_server hwservicemanager:binder { call transfer };
+allow hal_audio_server audioserver:binder { call transfer };

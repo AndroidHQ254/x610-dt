@@ -1,0 +1,6 @@
+allow hal_gnss_default mnld:unix_dgram_socket sendto;
+allow hal_gnss_default vendor_file:file execute;
+allow hal_gnss_default system_server:binder { call transfer };
+
+allow hal_gnss_default mnld_data_file:sock_file { ioctl read write create getattr setattr lock append map unlink rename open };
+allow hal_gnss_default mnld_data_file:dir { ioctl read write create getattr setattr lock append map unlink rename open };
