@@ -1,0 +1,1 @@
+allow merged_hal_service pnpmgr:binder transfer;

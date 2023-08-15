@@ -1,0 +1,8 @@
+sys.pnpmgr.state u:object_r:pnpmgr_state_prop:s0
+prop.pnp. u:object_r:pnpmgr_state_prop:s0
+ro.vendor.pnpmgr.support u:object_r:ro_vendor_pnpmgr_support_prop:s0
+
+debug.turning.mask u:object_r:debug_tmask_prop:s0
+debug.camera.ischg u:object_r:debug_ischg_prop:s0
+debug.camera.cf u:object_r:debug_cf_prop:s0
+debug.camera.precf u:object_r:debug_precf_prop:s0

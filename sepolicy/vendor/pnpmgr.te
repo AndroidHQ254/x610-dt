@@ -1,0 +1,23 @@
+type pnpmgr, domain;
+type pnpmgr_exec, exec_type, file_type, vendor_file_type;
+
+allow pnpmgr same_process_hal_file:file execute;
+allow pnpmgr sys_pnpmgr_file:file { read write open };
+allow pnpmgr sys_pnpmgr_file:dir search;
+allow pnpmgr proc_perfmgr:file { read write open };
+allow pnpmgr proc_perfmgr:dir { read search open };
+allow pnpmgr sysfs_mmcblk:dir { read search };
+allow pnpmgr sysfs_mmcblk:lnk_file read;
+allow pnpmgr sysfs:file open;
+allow pnpmgr pnpmgr_device:chr_file { ioctl read write open };
+allow pnpmgr mtk_hal_power:fd use;
+allow pnpmgr mtk_hal_power:binder { call transfer };
+allow pnpmgr merged_hal_service:fd use;
+allow pnpmgr merged_hal_service:binder { call transfer };
+allow pnpmgr pnpmgr_service:service_manager { add find };
+allow pnpmgr hwservicemanager:binder call;
+allow pnpmgr mtk_hal_power_hwservice:hwservice_manager find;
+allow pnpmgr pnpmgr_exec:file { read getattr map execute entrypoint open };
+allow pnpmgr vendor_file:file execute;
+
+set_prop(pnpmgr, pnpmgr_state_prop)

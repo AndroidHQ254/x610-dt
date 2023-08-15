@@ -1,0 +1,2 @@
+type pnpmgr_service, vndservice_manager_type;
+type sf_service, vndservice_manager_type;

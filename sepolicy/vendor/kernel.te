@@ -1,0 +1,4 @@
+dontaudit kernel kernel:capability dac_override;
+allow kernel fuse:dir search;
+allow kernel debugfs_ion:file { getattr open };
+allow kernel sysfs_ccci:file open;

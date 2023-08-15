@@ -1,0 +1,3 @@
+genfscon debugfs /pvr u:object_r:debugfs_gpu_img:s0
+genfscon proc /rlkdevinfo u:object_r:proc_rlkdevinfo:s0
+genfscon proc /rid u:object_r:proc_rlkdevinfo:s0

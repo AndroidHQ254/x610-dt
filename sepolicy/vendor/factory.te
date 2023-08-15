@@ -1,0 +1,2 @@
+allow factory proc_rlkdevinfo:file { read getattr open };
+allow factory sf_device:chr_file { ioctl read write getattr lock append map open };
