@@ -1,5 +1,5 @@
-allow init audio_device:chr_file { ioctl open read };
-allow init ccci_aud_device:chr_file { ioctl open read };
+allow init audio_device:chr_file { ioctl open read write };
+allow init ccci_aud_device:chr_file { ioctl open read write };
 #allow init vndbinder_device:chr_file { ioctl open read write };
 allow init audioserver:fd use;
 allow init audioserver:fifo_file write;
@@ -16,3 +16,7 @@ allow init hal_swfingerprint_hwservice:hwservice_manager { add find };
 #allow init pnpmgr_service:service_manager add;
 #allow init sf_service:service_manager find;
 allow init mnld:unix_dgram_socket sendto;
+allow init pnpmgr_device:chr_file read;
+allow init hal_swfingerprint_default_exec:file execute;
+#allow init sysfs:file open;
+
