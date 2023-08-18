@@ -182,10 +182,17 @@ vendor/lib64/libbluetoothem_mtk.so
 vendor/lib64/libbt-vendor.so
 
 # Camera
+lib64/libArcFilter.so
 lib64/libarcsoft_dualcam_wt_calibration.so
 lib64/libarcsoft_dualcam_wt_verification.so
 lib64/libarcsoft_panorama_burstcapture.so
 lib64/libarcsoft_wideselfie.so
+lib64/libcvface_api.so
+lib64/libjni_cvface_api.so
+lib64/libjni_wideselfie.so
+lib64/libjnistblur_preview_api.so
+lib64/libnama.so
+lib64/libstblur_preview_api.so
 vendor/etc/cache_data
 vendor/etc/megviisegment_model
 vendor/etc/model_mdl_cache
