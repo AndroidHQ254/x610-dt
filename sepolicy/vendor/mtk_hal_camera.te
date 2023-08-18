@@ -1,0 +1,11 @@
+set_prop(mtk_hal_camera, debug_ischg_prop)
+set_prop(mtk_hal_camera, debug_cf_prop)
+set_prop(mtk_hal_camera, debug_precf_prop)
+set_prop(mtk_hal_camera, debug_tmask_prop)
+
+allow mtk_hal_camera data_skin_cfg_file:dir { read write add_name search open };
+allow mtk_hal_camera data_skin_cfg_file:file { read write create open getattr };
+allow mtk_hal_camera vendor_arcsoft_data_file:dir { read write add_name search open };
+allow mtk_hal_camera vendor_arcsoft_data_file:file { read write create getattr open };
+allow mtk_hal_camera vendor_westalgo_data_file:dir { read write add_name search open };
+allow mtk_hal_camera vendor_westalgo_data_file:file { read write create getattr open };

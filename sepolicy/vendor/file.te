@@ -1,2 +1,7 @@
 type sysfs_light, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_graphics, sysfs_type, fs_type, mlstrustedobject;
+
+# Camera
+type data_skin_cfg_file, file_type, data_file_type;
+type vendor_arcsoft_data_file, file_type, data_file_type;
+type vendor_westalgo_data_file, file_type, data_file_type;

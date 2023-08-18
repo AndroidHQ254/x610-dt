@@ -1,0 +1,3 @@
+allow ppl_agent sysfs_dt_firmware_android:dir { open read };
+allow ppl_agent sysfs_dt_firmware_android:file { getattr open read };
+allow ppl_agent proc_cmdline:file { getattr open };

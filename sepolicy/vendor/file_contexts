@@ -1,2 +1,7 @@
 # Light
 /vendor/bin/hw/android\.hardware\.light-service\.x610      u:object_r:hal_light_default_exec:s0
+
+# Camera
+/data/vendor/arcsoft(/.*)?		u:object_r:vendor_arcsoft_data_file:s0
+/data/vendor/skin(/.*)?		u:object_r:data_skin_cfg_file:s0
+/data/vendor/westalgo(/.*)?		u:object_r:vendor_westalgo_data_file:s0

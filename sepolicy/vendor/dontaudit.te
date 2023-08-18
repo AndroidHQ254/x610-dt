@@ -1,0 +1,6 @@
+dontaudit init sysfs:file { open read write };
+dontaudit init vendor_file:file execute_no_trans;
+dontaudit kernel kernel:capability dac_override;
+dontaudit logpersist logpersist:capability dac_override;
+dontaudit netutils_wrapper netutils_wrapper:capability dac_override;
+dontaudit wfca wfca:capability dac_override;

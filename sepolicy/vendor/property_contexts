@@ -1,0 +1,5 @@
+# Camera
+debug.camera.ischg u:object_r:debug_ischg_prop:s0
+debug.camera.cf u:object_r:debug_cf_prop:s0
+debug.camera.precf u:object_r:debug_precf_prop:s0
+debug.turning.mask u:object_r:debug_tmask_prop:s0

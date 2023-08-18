@@ -1,0 +1,11 @@
+allow init debugfs_fb:file write;
+allow init proc_perfmgr:file open;
+allow init same_process_hal_file:file execute;
+allow init sysfs_devices_system_cpu:file write;
+allow init sysfs_lowmemorykiller:file { open write };
+allow init init:unix_stream_socket connectto;
+
+set_prop(init, system_prop)
+set_prop(init, debug_prop)
+get_prop(init, mtk_printk_prop)
+get_prop(init, service_nvram_init_prop)
