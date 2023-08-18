@@ -7,6 +7,9 @@
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# Inherit stock camera
+$(call inherit-product, vendor/infinix/x610-transsioncamera/x610/x610-vendor.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@4.0.vendor \
