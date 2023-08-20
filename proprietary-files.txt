@@ -411,12 +411,6 @@ vendor/lib64/hw/dfps.mt6765.so
 vendor/lib64/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
 vendor/lib64/vendor.mediatek.hardware.dfps@1.0.so
 
-# Dirac
-vendor/etc/diracmobile.config
-vendor/etc/diracvdd.bin
-vendor/lib/soundfx/libdirac.so
-vendor/lib/libDiracAPI_SHARED.so
-
 # DRM-Hardware
 vendor/lib/libdrm.so
 vendor/lib/libmtk_drvb.so
