@@ -1,3 +1,6 @@
 get_prop(radio, mtk_dynims_prop)
 get_prop(radio, mtk_rsc_prop)
 get_prop(radio, mtk_wfc_support_prop)
+
+allow radio vendor_default_prop:file { getattr open };
+allow radio mtk_hal_rild_hwservice:hwservice_manager { add find };

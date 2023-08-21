@@ -1,1 +1,4 @@
 get_prop(rild, mtk_md_version_prop)
+
+get_prop(rild, default_prop)
+allow rild mtk_hal_rild_hwservice:hwservice_manager add;

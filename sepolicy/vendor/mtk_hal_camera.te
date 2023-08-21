@@ -9,3 +9,6 @@ allow mtk_hal_camera vendor_arcsoft_data_file:dir { read write add_name search o
 allow mtk_hal_camera vendor_arcsoft_data_file:file { read write create getattr open };
 allow mtk_hal_camera vendor_westalgo_data_file:dir { read write add_name search open };
 allow mtk_hal_camera vendor_westalgo_data_file:file { read write create getattr open };
+
+binder_call(mtk_hal_camera, init)
+get_prop(mtk_hal_camera, default_prop)

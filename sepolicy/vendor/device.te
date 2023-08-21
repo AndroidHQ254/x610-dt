@@ -1,0 +1,2 @@
+type sf_device, dev_type;
+type pnpmgr_device, dev_type;

@@ -9,3 +9,17 @@ set_prop(init, system_prop)
 set_prop(init, debug_prop)
 get_prop(init, mtk_printk_prop)
 get_prop(init, service_nvram_init_prop)
+
+binder_call(init, hal_fingerprint_default)
+binder_call(init, hwservicemanager)
+binder_call(init, init)
+binder_call(init, vndservicemanager)
+allow init device:chr_file { ioctl open read write };
+allow init vndbinder_device:chr_file { ioctl open read write };
+allow init sf_service:service_manager find;
+allow init hal_swfingerprint_hwservice:hwservice_manager { add find };
+allow init pnpmgr_service:service_manager add;
+allow init pnpmgr_device:chr_file { open read };
+allow init sys_pnpmgr_file:file { open read write };
+allow init hal_power_hwservice:hwservice_manager add;
+allow init mtk_hal_power_hwservice:hwservice_manager add;
