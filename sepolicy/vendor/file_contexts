@@ -9,3 +9,5 @@
 /dev/sunwave_fp		u:object_r:sf_device:s0
 /dev/pnpmgr(/.*)?		u:object_r:pnpmgr_device:s0
 /sys/power/pnpmgr(/.*)?		u:object_r:sys_pnpmgr_file:s0
+
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service.x610 u:object_r:hal_fingerprint_default_exec:s0

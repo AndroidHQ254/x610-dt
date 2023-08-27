@@ -12,3 +12,5 @@ allow hal_fingerprint_default init:unix_stream_socket connectto;
 typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
 
 binder_call(hal_fingerprint_default, init)
+
+allow hal_fingerprint_default sf_service:service_manager add;

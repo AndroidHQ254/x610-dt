@@ -71,7 +71,7 @@ PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service
+    android.hardware.biometrics.fingerprint@2.1-service.x610
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
